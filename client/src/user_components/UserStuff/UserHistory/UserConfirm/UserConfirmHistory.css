@@ -1,0 +1,118 @@
+.user-confirm-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background: #f9f9f9;
+}
+
+/* ให้ content scroll แนวนอนได้ถ้ากว้างเกิน */
+.user-confirm-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+  background: #f9f9f9;
+  box-sizing: border-box;
+  overflow-x: auto;
+  height: auto;
+}
+
+/* กล่องหลัก: กินเต็ม 100% แต่จำกัด max-width */
+.user-confirm-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 800px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* ชื่อเรื่อง */
+.user-confirm-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #003366;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Grid รายละเอียด: auto-fit ง่ายๆ ไม่ต้อง media */
+.user-confirm-grid {
+  display: grid;
+  grid-template-columns: max-content auto;
+  row-gap: 1rem;
+  column-gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Wrapper โต๊ะแนวนอน */
+.user-confirm-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+/* ตาราง ให้กว้างตาม container */
+.user-confirm-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px; /* ปรับตามจำนวนคอลัมน์ */
+}
+
+.user-confirm-table th,
+.user-confirm-table td {
+  border: 1px solid #ccc;
+  padding: 0.6rem;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.user-confirm-table th {
+  background: #e3edf8;
+  font-weight: bold;
+}
+
+.total-row td {
+  font-weight: bold;
+}
+
+/* สถานะ */
+.user-confirm-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 0.5rem;
+}
+.user-confirm-approval-text {
+  color: #009244;
+  font-weight: bold;
+}
+
+/* ปุ่มกลับ */
+.user-confirm-button-container {
+  text-align: right;
+}
+.user-confirm-btn-back {
+  background: #f79c05;
+  color: #fff;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.user-confirm-btn-back:hover {
+  background: #e67c00;
+}
+
+/* แนบ layout navbar/sidebar */
+.stuff-navbar, .stuff-sidebar {
+  width: 100%;
+}
+.stuff-sidebar {
+  display: flex;
+  min-height: 100vh;
+}

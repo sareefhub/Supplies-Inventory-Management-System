@@ -1,0 +1,121 @@
+/* UserMoreDetail.css */
+
+.more-detail-container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.more-detail-box {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+  box-sizing: border-box;
+}
+
+.more-detail-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #003366;
+}
+
+.more-detail-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem 2rem;
+  font-size: 1rem;
+  margin: 0 auto 2rem;
+  width: 100%;
+}
+
+.more-detail-grid p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.more-detail-subtitle {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.more-detail-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.more-detail-table th,
+.more-detail-table td {
+  border: 1px solid #ccc;
+  padding: 0.6rem;
+  text-align: center;
+  font-size: 1rem;
+  word-wrap: break-word;
+}
+
+.more-detail-table th {
+  background-color: #e3edf8;
+  font-weight: bold;
+}
+
+.more-detail-item-image {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  object-fit: cover;
+}
+
+.more-detail-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.more-detail-btn-back {
+  background-color: #f79c05;
+  color: #fff;
+  padding: 0.6rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.more-detail-btn-back:hover {
+  background-color: #e67c00;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .more-detail-box {
+    padding: 1rem;
+  }
+  .more-detail-title {
+    font-size: 1.5rem;
+  }
+  .more-detail-grid {
+    grid-template-columns: 1fr;
+    gap: 0.5rem 1rem;
+  }
+  .more-detail-table th,
+  .more-detail-table td {
+    padding: 0.4rem;
+    font-size: 0.9rem;
+  }
+  .more-detail-item-image {
+    max-width: 100px;
+  }
+  .more-detail-btn-back {
+    flex: 1;
+    text-align: center;
+  }
+}

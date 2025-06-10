@@ -1,0 +1,57 @@
+.org-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+  background-color: #f9f9f9;
+  align-items: flex-start;
+  width: auto;
+}
+
+.org-title {
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #003366;
+}
+
+.org-controls {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.org-search-box {
+  position: relative;
+}
+
+.org-input {
+  padding: 0.5em 0.5em 0.5em 2em;
+  border: 2px solid #aab3bb;
+  border-radius: 3px;
+  font-size: 1em;
+}
+
+.org-search-icon {
+  position: absolute;
+  left: 0.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+  pointer-events: none;
+}
+
+.org-btn-green {
+  height: 45px;
+  background-color: #2d7a3e;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 3px;
+  font-size: 1em;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.org-btn-green:hover {
+  transform: scale(1.05);
+}

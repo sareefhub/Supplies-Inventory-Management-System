@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', Arial, sans-serif;
+}
+
+.loginpage-body {
+  background-color: #ffffff;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.loginpage-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+
+.loginpage-left {
+  width: 100%;
+  max-width: 500px;
+  padding: 60px 60px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginpage-box {
+  width: 100%;
+  max-width: 360px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.loginpage-logo {
+  width: 200px;
+  height: 80px;
+  margin: 0;
+  margin-bottom: 0;
+  display: block;
+}
+
+.loginpage-logo {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.loginpage-title {
+  font-size: 1.8em;
+  margin: 10px 0 30px;
+  color: #333;
+}
+
+.loginpage-input-group {
+  text-align: left;
+  margin-bottom: 20px;
+  position: relative;
+  /* สำหรับ eye-icon */
+}
+
+.loginpage-input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-size: 1em;
+}
+
+.loginpage-input-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1.5px solid #ccc;
+  font-size: 1em;
+  transition: border 0.3s;
+}
+
+.loginpage-input-group input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.loginpage-forgot-password {
+  text-align: right;
+  margin-bottom: 20px;
+  color: #007bff;
+  font-size: 0.95em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.loginpage-button {
+  width: 100%;
+  padding: 14px;
+  background-color: #007bff;
+  color: white;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.loginpage-button:hover {
+  background-color: #0056b3;
+}
+
+.loginpage-switch-page {
+  margin-top: 0.8rem;
+  font-size: 0.85em;
+  text-align: center;
+}
+
+.loginpage-switch-page a {
+  color: #2176bd;
+  text-decoration: none;
+}
+
+.loginpage-right {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.loginpage-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.loginpage-eye-view {
+  padding-top: 7px;
+  width: 60%;
+  opacity: 0.5;
+}
+
+.loginpage-eye-icon {
+  position: absolute;
+  right: 14px;
+  top: 38px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #999;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .loginpage-body {
+    background-image: url("../../assets/bg-login2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
+  }
+
+  .loginpage-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  .loginpage-left {
+    width: 100%;
+    max-width: 320px;
+    padding: 20px 20px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .loginpage-box {
+    width: 100%;
+    padding: 0;
+  }
+
+  .loginpage-logo {
+    width: 70px;
+    height: auto;
+    margin: 0 auto 1rem;
+    display: block;
+  }
+
+  .loginpage-title {
+    font-size: 1.8em;
+    margin: 10px 0 30px;
+    color: #333;
+  }
+
+  .loginpage-input-group {
+    margin-bottom: 16px;
+  }
+
+  .loginpage-input-group input {
+    padding: 10px 12px;
+    font-size: 0.95em;
+  }
+
+  .loginpage-forgot-password {
+    font-size: 0.85em;
+    margin-bottom: 16px;
+  }
+
+  .loginpage-button {
+    font-size: 1em;
+    padding: 12px;
+    width: 90%;
+    margin: 1rem auto 0 auto;
+    display: block;
+  }
+
+  .loginpage-right {
+    display: none;
+  }
+
+  .loginpage-eye-icon {
+    top: 34px;
+    font-size: 0.9em;
+  }
+
+  .loginpage-switch-page {
+    margin-top: 0.4rem;
+    font-size: 0.9em;
+  }
+}

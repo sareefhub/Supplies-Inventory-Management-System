@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', Arial, sans-serif;
+}
+
+/* Container */
+.human-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+  background-color: #f9f9f9;
+  align-items: flex-start;
+  width: auto;
+  margin-left: 1em;
+}
+
+/* Title */
+.human-bar-title {
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #003366;
+}
+
+/* Controls wrapper */
+.human-bar-controls {
+  display: flex;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+/* Search box wrapper */
+.human-bar-search-box {
+  position: relative;
+}
+
+/* Search input */
+.human-bar-input {
+  padding: 0.5em 0.5em 0.5em 2em;
+  border: 2px solid #aab3bb;
+  border-radius: 3px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+/* Search icon */
+.human-bar-search-icon {
+  position: absolute;
+  left: 0.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+  pointer-events: none;
+}
+
+/* Button */
+.human-bar-btn-success {
+  background-color: #2d7a3e;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 3px;
+  font-size: 1em;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.human-bar-btn-success:hover {
+  transform: scale(1.05);
+}

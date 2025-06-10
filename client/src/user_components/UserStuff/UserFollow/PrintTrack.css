@@ -1,0 +1,99 @@
+html, body {
+  margin:0; padding:0;
+}
+
+.printtrack-wrapper {
+  width:210mm; min-height:297mm;
+  padding:10mm;
+  box-sizing:border-box;
+  margin:auto;
+  font-family:'TH SarabunNew', sans-serif;
+  font-size:16px; line-height:1.4; color:#000;
+}
+
+.printtrack-logo-header { text-align:left; margin-bottom:0.5rem; }
+.printtrack-logo { width:80px; }
+
+.printtrack-title {
+  text-align:center;
+  font-size:26px;
+  font-weight:bold;
+  margin-bottom: 30px;
+}
+
+.printtrack-info-grid {
+  display:grid;
+  grid-template-columns:auto 1fr auto 1fr;
+  row-gap:4mm;
+  column-gap:6mm;
+  margin-bottom:2mm;
+}
+
+.printtrack-info-table{
+  border-spacing: 10mm 2mm;
+  margin-bottom: 5.3mm;
+}
+
+.printtrack-info-grid > div {
+  white-space:nowrap;
+}
+
+.printtrack-info-grid .span-col-left {
+  grid-column:1 / span 2;
+}
+
+.printtrack-table {
+  width:100%;
+  border-collapse:collapse;
+  margin-bottom:8mm;
+}
+
+.printtrack-table th,
+.printtrack-table td {
+  border:1px solid #000;
+  padding:0.2rem;
+  text-align:center;
+  vertical-align:middle;
+  font-size:15px;
+}
+
+.printtrack-table th {
+  background:#dbeaff;
+  font-weight:bold;
+}
+
+.printtrack-sign-table {
+  width:99.99%;
+  border-collapse:separate;
+  border-spacing: 0.5mm 0;
+  vertical-align:middle;
+}
+
+.printtrack-sign-table td {
+  border:1px solid #000;
+  padding:7mm;
+  vertical-align:top;
+  font-size:15px;
+}
+
+.sign-header {
+  margin:0 0 4mm;
+  font-weight:bold;
+  text-align:center;
+}
+
+.sign-line {
+  margin:2mm 0;
+
+  text-align:center;
+}
+
+.sign-gap {
+  height:4mm;
+}
+
+
+@media print {
+  @page { size:A4 portrait; margin:0; }
+  body { print-color-adjust:exact; -webkit-print-color-adjust:exact; }
+}

@@ -1,0 +1,119 @@
+.main-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+  background-color: #d1e7ff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  font-family: 'Prompt', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  border-bottom: 1px solid #cbd5e1;
+  min-height: 50px;
+}
+
+.navbar-left,
+.navbar-right {
+  display: flex;
+  align-items: center;
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
+.navbar-logo {
+  max-height: 3rem;
+  width: auto;
+  filter: drop-shadow(1px 1px 2px rgba(0,0,0,0.15));
+}
+
+.navbar-right {
+  justify-content: flex-end;
+  gap: 0.5rem;
+  background-color: #e0f2fe;
+  padding: 0.25rem 0.75rem;
+  border-radius: 2rem;
+}
+
+.navbar-profile-pic {
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #94a3b8;
+  background-color: white;
+}
+
+.navbar-username {
+  margin-left: 0.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+
+.logout-button {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: none;
+  border: none;
+  color: #ef4444;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.logout-button:hover {
+  opacity: 0.75;
+}
+
+.logout-text {
+  white-space: nowrap;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) and (min-width: 481px) {
+  .main-navbar {
+    padding: 0.75rem 1.5rem;
+  }
+  .navbar-logo {
+    max-height: 2.5rem;
+  }
+  .navbar-username {
+    display: none;
+  }
+  .logout-text {
+    display: none;
+  }
+  .navbar-right {
+    padding: 0.2rem 0.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-navbar {
+    padding: 0.25rem 0.5rem;
+  }
+  .navbar-logo {
+    max-height: 2rem;
+  }
+  .navbar-username {
+    display: inline-block;
+    margin-left: 0.25rem;
+    font-size: 0.85rem;
+  }
+  .logout-text {
+    display: none;
+  }
+  .navbar-profile-pic {
+    width: 1.8rem;
+    height: 1.8rem;
+  }
+  .navbar-right {
+    background: none;
+    padding: 0;
+    gap: 0.5rem;
+  }
+}

@@ -1,0 +1,71 @@
+/* src/components/Adjust/Adjustbar.css */
+.adjustbar-header {
+  padding: 0 1em; 
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+  background-color: #f9f9f9;
+  align-items: flex-start;
+}
+
+.adjustbar-title {
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #003366;
+}
+
+.adjustbar-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8em;
+  width: 100%;
+}
+
+.adjustbar-search-container {
+  position: relative;
+}
+
+.adjustbar-search-input {
+  padding: 0.5em 0.5em 0.5em 2em;
+  border: 2px solid #aab3bb;
+  border-radius: 3px;
+  font-size: 1em;
+  min-width: 250px;
+}
+
+.adjustbar-search-icon {
+  position: absolute;
+  left: 0.5em;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+  pointer-events: none;
+}
+
+.adjustbar-btn {
+  padding: 0.5em 1em;
+  border-radius: 3px;
+  font-size: 1em;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.adjustbar-btn.add {
+  background-color: #2d7a3e;
+  padding: 0.5em 1em;
+  border: none;
+  border-radius: 3px;
+  font-size: 1em;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+  transition: transform 0.2s;
+}
+
+.adjustbar-btn.add:hover {
+  transform: scale(1.05);
+}

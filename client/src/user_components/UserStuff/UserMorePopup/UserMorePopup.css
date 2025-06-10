@@ -1,0 +1,452 @@
+.usermorepopup-container {
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 1000px;
+  position: relative;
+}
+
+.usermorepopup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.usermorepopup-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #003366;
+}
+
+.usermorepopup-add-btn {
+  padding: 0.5rem 2rem;
+  background: linear-gradient(to right, #3b82f6, #2563eb);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transform: translateY(0);
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.usermorepopup-add-btn:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.usermorepopup-add-btn:active {
+  transform: scale(0.97); /* 👈 จมลงเล็กน้อย */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.usermorepopup-row {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 1rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08); /* เปลี่ยนจาก 0.05 เป็น 0.08 และเพิ่ม spread */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.usermorepopup-row-line1,
+.usermorepopup-row-line2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+/* ✅ แยกเฉพาะของ row-line2 */
+.usermorepopup-row-line2 {
+  flex-wrap: nowrap;
+  width: 100%;
+}
+
+
+.usermorepopup-row:hover {
+  transform: scale(1.01);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.usermorepopup-input {
+  flex: 1;
+  min-width: 160px;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  min-width: 100px;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+  
+}
+
+/* .usermorepopup-input[type="number"] {
+  width: 140px;          
+  flex: 0 0 auto;       
+}
+
+.usermorepopup-input[type="text"] {
+  width: 300px;          
+  flex: 0 0 auto;      
+} */
+
+.usermorepopup-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.2);
+}
+
+.usermorepopup-remove-btn {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  
+  display: flex;            
+  align-items: center;        
+  justify-content: center;     
+  
+  height: 40px;              
+  width: 40px;                 
+  padding: 0;                
+}
+
+.usermorepopup-remove-btn:hover {
+  background-color: #cc0000;
+}
+
+.usermorepopup-remove-btn svg {
+  font-size: 15px;            
+}
+
+
+.usermorepopup-footer {
+  text-align: right;
+  margin-top: 1.5rem;
+}
+
+.usermorepopup-save-btn {
+  padding: 0.5rem 2rem;
+  background: linear-gradient(to right, #22c55e, #16a34a);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.usermorepopup-save-btn:hover {
+  background-color: #1e7e34;
+}
+
+
+.usermorepopup-select {
+  flex: 1;
+  min-width: 250px;
+}
+
+.usermorepopup-select .css-1s2u09g-control {
+  border-radius: 6px;
+}
+
+.usermorepopup-select .css-qc6sy-singleValue {
+  display: flex;
+  flex-direction: column;
+}
+
+.usermorepopup-select .css-qc6sy-singleValue div:last-child {
+  font-size: 0.75rem;
+  color: #999;
+}
+
+.usermorepopup-option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.usermorepopup-name {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.usermorepopup-amount {
+  font-size: 0.8rem;
+  color: #999;
+  font-style: italic;
+}
+
+.userstuff-popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.usermorepopup-close-btn {
+  background: transparent;
+  border: none;
+  color: #999;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.usermorepopup-close-btn:hover {
+  color: #333;
+}
+
+/* เพิ่มในไฟล์ CSS ใดก็ได้ที่โหลด global */
+.swal2-container {
+  z-index: 20000 !important;
+}
+
+.usermorepopup-info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+
+.usermorepopup-info-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.usermorepopup-info-group label {
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+.usermorepopup-info-input {
+  background-color: #f9fafb;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.95rem;
+}
+
+
+.usermorepopup-divider {
+  border: none;
+  border-top: 1.5px solid #e5e7eb;
+  margin: 1.5rem 0;
+}
+
+/* ช่อง select วัสดุ (70%) */
+.usermorepopup-select {
+  flex: 7;
+  min-width: 200px;
+}
+
+/* ช่องจำนวน (30%) */
+.usermorepopup-quantity-input {
+  flex: 3;
+  min-width: 100px;
+}
+
+/* ช่องราคาต่อหน่วย (40%) */
+.usermorepopup-price-input {
+  flex: 4;
+  min-width: 140px;
+}
+
+/* ช่องหมายเหตุ (60%) */
+.usermorepopup-note-input {
+  flex: 6;
+  min-width: 160px;
+}
+
+.usermorepopup-file-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.usermorepopup-file-input {
+  position: relative;
+  display: inline-block;
+}
+
+.usermorepopup-file-input input[type="file"] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.usermorepopup-file-label {
+  background-color: #2563eb;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.usermorepopup-file-label input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.usermorepopup-file-label:hover {
+  background-color: #1e40af;
+}
+
+.usermorepopup-file-name {
+  color: #555;
+  font-size: 0.9rem;
+  margin-left: 1rem;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .usermorepopup-container {
+    width: 95%;
+    max-width: 100%;
+    padding: 1rem;
+    max-height: 95vh;
+    overflow-y: auto;
+    border-radius: 12px;
+  }
+
+  .usermorepopup-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .usermorepopup-header h2 {
+    font-size: 1.3rem;
+    text-align: left;
+  }
+
+  .usermorepopup-add-btn {
+    width: 100%;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 0.6rem 1rem;
+    margin-top: 1rem;
+  }
+
+  .usermorepopup-row {
+    padding: 0.75rem;
+    gap: 0.75rem;
+    position: relative;
+    padding-top: 2rem;
+    border: 1px solid #000;
+    border-radius: 8px;
+  }
+
+  .usermorepopup-row::before {
+    content: attr(data-index);
+    position: absolute;
+    top: 0.5rem;
+    left: 1rem;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #003366;
+  }
+
+  .usermorepopup-row-line1,
+  .usermorepopup-row-line2 {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .usermorepopup-input {
+    width: 100%;
+    min-width: unset;
+    font-size: 0.95rem;
+  }
+
+  .usermorepopup-remove-btn {
+    width: 100%;
+    height: 40px;
+    font-size: 1rem;
+  }
+
+  .usermorepopup-info-block {
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .usermorepopup-info-input {
+    font-size: 0.95rem;
+  }
+
+  .usermorepopup-save-btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.75rem;
+  }
+
+  .usermorepopup-file-container {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+  }
+
+  .usermorepopup-file-label {
+    width: 100%;
+    text-align: center;
+    padding: 0.6rem 1rem;
+    font-size: 0.95rem;
+  }
+
+  .usermorepopup-file-name {
+    margin-left: 0;
+    font-size: 0.9rem;
+  }
+
+  .usermorepopup-select,
+  .usermorepopup-quantity-input,
+  .usermorepopup-price-input,
+  .usermorepopup-note-input {
+    flex: 1 1 100%;
+    min-width: unset;
+  }
+}

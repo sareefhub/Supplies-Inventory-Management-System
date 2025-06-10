@@ -1,0 +1,22 @@
+.userfollow-navbar {
+  width: 100%;
+  height: 100%;
+}
+
+.userfollow-sidebar {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.userfollow-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f9f9f9;
+  padding: 1em;
+  box-sizing: border-box;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  -webkit-overflow-scrolling: touch;
+}

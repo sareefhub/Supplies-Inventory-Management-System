@@ -1,0 +1,97 @@
+:root {
+  --color-blue: #1e398d;
+  --color-purple: #6c2eb9;
+  --color-orange: #f79c05;
+  --color-text: #003366;
+  --color-bg: #f9f9f9;
+  --border-radius: 4px;
+  --spacing: 1rem;
+}
+
+.stuff-header {
+  padding: 0 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+  background-color: #f9f9f9;
+  align-items: flex-start;
+  width: auto;
+}
+
+.stuff-title {
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #003366;
+}
+
+.stuff-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.8em;
+  width: 100%;
+}
+
+/* ค้นหา */
+.search-container {
+  position: relative;
+}
+
+.search-container input {
+  padding: 0.5em 0.5em 0.5em 2em;
+  border: 2px solid #aab3bb;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  height: 2.5em;
+  min-width: 250px;
+  box-sizing: border-box;
+}
+
+.search-icon {
+  position: absolute;
+  left: 0.6em;
+  top: 50%;
+  transform: translateY(-50%);
+  color: gray;
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+/* ปุ่ม */
+.btn {
+  padding: 0.5em 1.2em;
+  border: none;
+  border-radius: var(--border-radius);
+  color: white;
+  font-size: 0.95em;
+  font-weight: bold;
+  cursor: pointer;
+  height: 2.5em;
+  min-width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.03);
+}
+
+.btn.blue {
+  background-color: var(--color-blue);
+}
+
+.btn.purple {
+  background-color: var(--color-purple);
+}
+
+.btn.orange {
+  background-color: var(--color-orange);
+}
+
+/* ปุ่มที่ถูกเลือก */
+.active-tab {
+  box-shadow: 0 0 0 3px rgba(30, 57, 141, 0.3);
+}

@@ -1,0 +1,192 @@
+/* ✅ Container */
+.stuff-container {
+  width: 100%;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+/* ✅ Header Description */
+.stuff-description {
+  margin-bottom: 0.5em; /* ตามที่คุณระบุไว้ */
+}
+
+/* ✅ Table */
+.stuff-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  table-layout: auto;
+}
+
+/* ✅ Header */
+.stuff-table th {
+  background-color: #dfe8f6;
+  font-weight: bold;
+  color: #003366;
+  padding: 12px;
+  border: 1px solid #999;
+  text-align: center;
+  font-size: 14px;
+  cursor: default;
+}
+
+/* ✅ Body Cells */
+.stuff-table td {
+  padding: 12px;
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+  border: 1px solid #999;
+  vertical-align: middle;
+  transition: background-color 0.2s ease;
+}
+
+/* ✅ Hover row */
+.stuff-table tr:hover {
+  background-color: #f0f8ff;
+  cursor: pointer;
+}
+
+/* ✅ สถานะ */
+.stuff-status {
+  font-weight: bold;
+  padding: 0.4em 0.8em;
+  border-radius: 4px;
+}
+
+.stuff-pending {
+  color: #d48b00;
+}
+
+.stuff-approved {
+  color: #0f9d58;
+}
+
+.stuff-rejected {
+  color: #dc3545;
+}
+
+/* ✅ No data */
+.stuff-no-data {
+    text-align: center;
+    font-size: medium;
+    color: black;
+    font-weight: normal;
+    font-style: italic;
+    padding: 1em;
+  }
+
+/* ✅ Link */
+.stuff-link {
+  color: #000;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+/* ✅ Pagination */
+.stuff-pagination {
+  margin-top: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.stuff-pagination-info {
+  font-size: 14px;
+  color: #333;
+}
+
+.stuff-pagination-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.stuff-btn {
+  padding: 0.4rem 1rem;
+  background-color: #fff;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.stuff-btn:hover {
+  background-color: #e6f0ff;
+}
+
+.stuff-btn:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: not-allowed;
+}
+
+/* ✅ Page Input */
+.stuff-page-input {
+  width: 55px;
+  text-align: center;
+  padding: 0.4rem 0.6rem;
+  border: 2px solid rgba(0, 123, 255, 0.3);
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.stuff-page-input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.stuff-page-input:focus {
+  outline: none;
+  border-color: rgba(0, 123, 255, 0.7);
+}
+
+.stuff-page-input::-webkit-inner-spin-button,
+.stuff-page-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .stuff-table th,
+  .stuff-table td {
+    font-size: 13px;
+    padding: 0.5em;
+  }
+
+  .stuff-pagination {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+  }
+}
+
+.stuff-tr {
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.stuff-tr:hover {
+  background-color: #f0f8ff;
+}
+
+.user-status.waiting {
+  color: #4b25b6; /* ม่วงเข้ม */
+  font-weight: bold;
+}
+
+.user-status.received {
+  color: #0f9d58; /* เขียว */
+  font-weight: bold;
+}

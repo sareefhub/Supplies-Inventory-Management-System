@@ -1,0 +1,208 @@
+.registerpage-body {
+  background-color: #f5f5f5;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.registerpage-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+
+.registerpage-left {
+  width: 100%;
+  max-width: 700px;
+  background-color: #ffffff;
+  padding: 30px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerpage-box {
+  width: 100%;
+  padding: 2rem;
+  margin-left: 0;
+  margin-right: auto;
+  transform: scale(1);
+  background-color: #fff;
+}
+
+.registerpage-logo {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto 1rem auto;
+}
+
+.registerpage-title {
+  font-size: 1.8em;
+  margin: 30px 0 30px;
+  color: #333;
+  text-align: center;
+}
+
+.registerpage-input-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.75em;
+}
+
+.registerpage-input-group label {
+  margin-bottom: 0.1em;
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.registerpage-input-group input {
+  padding: 0.6em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 0.95rem;
+}
+
+.registerpage-button {
+  width: 100%;
+  padding: 0.75em;
+  background-color: #2176bd;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+  margin-top: 0.1rem;
+}
+
+.registerpage-button:hover {
+  background-color: #155a95;
+}
+
+.registerpage-switch-page {
+  margin-top: 0.8rem;
+  font-size: 0.85em;
+  text-align: center;
+}
+
+.registerpage-switch-page a {
+  color: #2176bd;
+  text-decoration: none;
+}
+
+.registerpage-right {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.registerpage-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.registerpage-input-columns {
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.registerpage-input-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .registerpage-body {
+    background-image: url("../../assets/bg-login2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
+  }
+
+  .registerpage-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    width: 100%;
+  }
+
+  .registerpage-left {
+    width: 100%;
+    max-width: 350px;
+    padding: 15px 15px;
+    border-radius: 16px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .registerpage-box {
+    width: 100%;
+    padding: 0;
+  }
+
+  .registerpage-input-columns {
+    flex-direction: column;
+    gap: 0.1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+
+  .registerpage-input-column {
+    gap: 0.1rem;
+  }
+
+  .registerpage-box h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+
+  .registerpage-button {
+    font-size: 0.9rem;
+    padding: 0.6em;
+    width: 90%;
+    margin: 1rem auto 0 auto;
+    display: block;
+  }
+
+  .registerpage-logo {
+    width: 70px;
+    height: auto;
+    margin: 0 auto 0.75rem;
+    display: block;
+  }
+
+  .registerpage-right {
+    display: none;
+  }
+
+  .registerpage-switch-page {
+    margin-top: 0.4rem;
+    font-size: 0.9em;
+  }
+}

@@ -1,0 +1,186 @@
+/* Container หลัก */
+.report-lowstock-container {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+/* ส่วนควบคุมด้านบน */
+.report-lowstock-controls {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+  gap: 1em;
+}
+
+/* 🔍 ช่องค้นหา */
+.report-lowstock-search-group {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.report-lowstock-search-group input {
+  padding: 0.4em 0.6em;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* 📁 ปุ่ม Export Excel */
+.report-lowstock-export-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.report-lowstock-export-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: #217346;
+  font-size: 16px;
+}
+
+.report-lowstock-export-btn:hover {
+  opacity: 0.85;
+}
+
+.excel-icon {
+  width: 30px;
+  height: auto;
+}
+
+/* 📊 ตารางแสดงรายการวัสดุ */
+.report-lowstock-table {
+  width: 100%;
+  min-width: 800px;
+  border-collapse: collapse;
+  background-color: white;
+  font-size: 14px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.report-lowstock-table th,
+.report-lowstock-table td {
+  border: 1px solid #ccc;
+  padding: 0.6em 0.8em;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.report-lowstock-table th {
+  background-color: #dfe8f6;
+  font-weight: bold;
+  color: #003366;
+}
+
+/* ⏬ Pagination */
+.report-lowstock-pagination-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.report-lowstock-pagination-info {
+  color: #333;
+  font-size: 14px;
+}
+
+.report-lowstock-pagination-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.report-lowstock-pagination-buttons button {
+  padding: 0.5rem 1rem;
+  background-color: white;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.report-lowstock-pagination-buttons button:hover {
+  background-color: #e6f0ff;
+}
+
+.report-lowstock-pagination-buttons button.active {
+  background-color: #2176bd;
+  color: white;
+}
+
+.report-lowstock-pagination-buttons button:disabled {
+  background-color: #eeeeee;
+  color: #aaa;
+  pointer-events: none;
+}
+
+/* 🔢 กล่องใส่หมายเลขหน้า (input) */
+.report-lowstock-page-input {
+  width: 50px;
+  text-align: center;
+  padding: 0.4rem 0.6rem;
+  border: 2px solid rgba(0, 123, 255, 0.3);
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  appearance: textfield;
+}
+
+.report-lowstock-page-input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.report-lowstock-page-input:focus {
+  outline: none;
+  border-color: rgba(0, 123, 255, 0.7);
+}
+
+.report-lowstock-page-input:focus::placeholder {
+  color: transparent;
+}
+
+.report-lowstock-page-input::-webkit-inner-spin-button,
+.report-lowstock-page-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* 📱 Responsive สำหรับจอแคบ */
+@media (max-width: 768px) {
+  .report-lowstock-table th,
+  .report-lowstock-table td {
+    font-size: 0.85em;
+    padding: 0.5em;
+  }
+
+  .report-lowstock-pagination-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5em;
+  }
+
+  .report-lowstock-controls {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .report-lowstock-export-wrapper {
+    justify-content: flex-start;
+  }
+}
