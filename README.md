@@ -2,21 +2,6 @@
 
 A comprehensive inventory management system designed to help businesses efficiently track, manage, and control their supplies and inventory operations.
 
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Technology Stack](#technology-stack)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Screenshots](#screenshots)
-- [Database Schema](#database-schema)
-- [API Documentation](#api-documentation)
-- [Contributing](#contributing)
-- [License](#license)
-- [Support](#support)
-
 ## 🌟 Overview
 
 The Supplies Inventory Management System is a robust solution that enables businesses to maintain accurate inventory records, track stock movements, manage suppliers, and generate comprehensive reports. Whether you're running a small retail shop or managing warehouse operations, this system provides the tools you need to streamline your inventory processes.
