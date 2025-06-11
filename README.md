@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/043ebab5-df39-4f53-b0c1-e537e836ea28)
+![image](https://github.com/user-attachments/assets/aacd0ec4-9228-40d9-a333-e37968b561af)
 
 # Supplies Inventory Management System
 
