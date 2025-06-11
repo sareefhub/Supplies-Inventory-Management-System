@@ -1,3 +1,4 @@
+
 # Supplies Inventory Management System
 
 A comprehensive inventory management system designed to help businesses efficiently track, manage, and control their supplies and inventory operations.
@@ -47,92 +48,99 @@ Before you begin, ensure you have the following installed
 - Composer (for PHP dependencies) or pip (for Python dependencies)
 - Node.js and npm (for frontend dependencies)
 
-# วิธีการรันระบบ Supplies Inventory Management บน Localhost
+# How to Run Supplies Inventory Management System on Localhost
 
-## 📋 สิ่งที่ต้องติดตั้งก่อน (Prerequisites)
+### 1. Install XAMPP or WAMP
 
-### 1. ติดตั้ง XAMPP หรือ WAMP
-**สำหรับ Windows:**
-- ดาวน์โหลด XAMPP จาก: https://www.apachefriends.org/download.html
-- รันไฟล์ติดตั้งและเลือก Apache, MySQL, PHP, phpMyAdmin
-- เปิด XAMPP Control Panel และเริ่ม Apache และ MySQL
+**For Windows:**
 
-**สำหรับ Mac:**
-- ติดตั้ง MAMP หรือ XAMPP สำหรับ Mac
-- หรือใช้ Homebrew: `brew install php mysql`
+-   Download XAMPP from: https://www.apachefriends.org/download.html
+-   Run the installer and select Apache, MySQL, PHP, phpMyAdmin
+-   Open XAMPP Control Panel and start Apache and MySQL
 
-**สำหรับ Linux (Ubuntu/Debian):**
+**For Mac:**
+
+-   Install MAMP or XAMPP for Mac
+-   Or use Homebrew: `brew install php mysql`
+
+**For Linux (Ubuntu/Debian):**
+
 ```bash
 sudo apt update
 sudo apt install apache2 mysql-server php php-mysql php-mbstring php-zip php-gd php-json php-curl
+
 ```
 
-### 2. ติดตั้ง Node.js และ NPM
-- ดาวน์โหลดจาก: https://nodejs.org/
-- ตรวจสอบ: `node --version` และ `npm --version`
+### 2. Install Node.js and NPM
 
-## 🚀 ขั้นตอนการติดตั้งระบบ
+-   Download from: https://nodejs.org/
+-   Verify installation: `node --version` and `npm --version`
 
-### ขั้นตอนที่ 1: Clone Repository
+## 🚀 System Installation Steps
+
+### Step 1: Clone Repository
 
 ```bash
-# Clone โปรเจ็กต์
+# Clone the project
 git clone https://github.com/ProjectDevTeams/Supplies-Inventory-Management-System.git .
-# หรือหากไม่มี git ให้ดาวน์โหลด ZIP และแตกไฟล์
+# Or if you don't have git, download ZIP and extract files
+
 ```
 
 ```bash
-# สร้างโฟลเดอร์สำหรับโปรเจ็กต์แล้วลากไฟล์ในโฟลเดอร์ backend มาใส่
+# Create folder for the project and move backend files
 mkdir C:\xampp\htdocs\backend
 cd C:\xampp\htdocs\backend
+
 ```
 
-### ขั้นตอนที่ 2: ตั้งค่าฐานข้อมูล
+### Step 2: Database Setup
 
-#### 2.1 เปิด phpMyAdmin
-- เปิดเบราว์เซอร์ไปที่: http://localhost/phpmyadmin
-- Login ด้วย username: `root` (password: ปล่าว หรือตามที่ตั้งไว้)
+#### 2.1 Open phpMyAdmin
 
-#### 2.2 สร้างฐานข้อมูล
+-   Open browser and go to: http://localhost/phpmyadmin
+-   Login with username: `root` (password: empty or as configured)
+
+#### 2.2 Create Database
+
 ```sql
--- ใน phpMyAdmin ไปที่แท็บ SQL และรันคำสั่งนี้
+-- In phpMyAdmin, go to SQL tab and run this command
 CREATE DATABASE supplies_inventory CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
 ```
 
-#### 2.3 Import ข้อมูล (หากมีไฟล์ SQL)
+#### 2.3 Import Data (if SQL file exists)
+
 ```bash
-# หากมีไฟล์ database/schema.sql
+# If you have database/schema.sql file
 mysql -u root -p supplies_inventory < database/schema.sql
+# Or use phpMyAdmin Import feature by dragging supplies_inventory.sql file to http://localhost/phpmyadmin
 
-# หรือใช้ phpMyAdmin Import ไฟล์ SQL โดยการลากไฟล์ supplies_inventory.sql มาใส่ใน http://localhost/phpmyadmin
 ```
 
-#### ใช้ Apache (XAMPP) ในการรัน Server
-1. วางโปรเจ็กต์ใน `C:\xampp\htdocs\backend`
-2. เปิดเบราว์เซอร์ไปที่: http://localhost/backend
+#### Using Apache (XAMPP) to Run Server
 
-## 🌐 หน้าเว็บ Client
+1.  Place the project in `C:\xampp\htdocs\backend`
+2.  Open browser and go to: http://localhost/backend
+
+## 🌐 Client Web Application
 
 ```bash
-# เข้าโฟลเดอร์
+# Navigate to folder
 cd client
+
 ```
 
 ```bash
-# ดาวน์โหลดแพ็กเกจ
+# Install packages
 npm install
+
 ```
 
 ```bash
-# รันโปรแกรม
+# Run the application
 npm start
+
 ```
 
-- เปิดเบราว์เซอร์ไปที่: http://localhost:3000
-
-## 🎯 เคล็ดลับสำหรับการพัฒนา
-
-1. **ใช้ Environment Variables**: แยกข้อมูลการตั้งค่าออกจากโค้ด
-2. **Backup Database**: สำรองฐานข้อมูลก่อนทำการเปลี่ยนแปลง
-3. **Version Control**: ใช้ Git ในการติดตามการเปลี่ยนแปลง
-4. **Testing**: ทดสอบฟีเจอร์ใหม่ในสภาพแวดล้อมพัฒนาก่อน
+-   Open browser and go to: http://localhost:3000
